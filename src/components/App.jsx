@@ -47,10 +47,10 @@ export class App extends React.Component {
 
   componentDidMount() { 
     const storagedContacts = localStorage.getItem('contacts');
-    if (storagedContacts === null) { 
-      this.setState({ contacts:initialContacts}) 
+    if (storagedContacts) { 
+      this.setState({contacts:JSON.parse(storagedContacts)}) 
     } else {
-      this.setState({ contacts:JSON.parse(storagedContacts)}) 
+      this.setState({contacts:initialContacts}) 
     }
   }
 

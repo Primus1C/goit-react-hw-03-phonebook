@@ -25,8 +25,6 @@ class ContactForm extends React.Component {
   }
  
   handleSubmit = (values, {resetForm}) => {
-    //console.log('Submited in form!')
-    //console.log('values:',values);
     this.setState = ({name:values.name, number:values.number})
     this.props.addContact(values);
     resetForm();
