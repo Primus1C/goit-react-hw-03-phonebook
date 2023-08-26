@@ -1,0 +1,30 @@
+:root {
+    --size-label: 20px;
+    --size-error: 16px;
+}
+
+.ContactForm__form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border: solid;
+    border-radius: 6px;
+    padding: 30px;
+}
+
+.ContactForm__form__label {
+    font-size: var(--size-label);
+}
+
+.ContactForm__form__field {
+    margin-left: 20px;
+}
+
+.ContactForm__form__error {
+    font-size: var(--size-error);
+    color: red;
+}
+
+#ContactForm__form__button {
+    font-size: var(--size-label);
+}
